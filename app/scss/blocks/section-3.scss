@@ -179,7 +179,139 @@
 }
 
 @media (max-width:575px) {
-    .block-3__title {
-        display: none;
+    .block-3__mob {
+        &-img_1 {
+            display: inline-block;
+            width: 100%;
+            height: 280px;
+            background: url("./images/block-3-mob-1.jpg") no-repeat right center/cover transparent;
+            color: #FFFFFF;
+        }
+        &-img_2 {
+            display: inline-block;
+            width: 100%;
+            height: 280px;
+            background: url("./images/block-3-mob-2.jpg") no-repeat right center/cover transparent;
+            color: #FFFFFF;
+        }
+        &-img_3 {
+            display: inline-block;
+            width: 100%;
+            height: 280px;
+            background: url("./images/block-3-mob-3.jpg") no-repeat right center/contain #fff;
+            color: #FFFFFF;
+        }
+        &-img_4 {
+            display: inline-block;
+            width: 100%;
+            height: 280px;
+            background: url("./images/block-3-mob-4.jpg") no-repeat right center/contain #fff;
+            color: #FFFFFF;
+        }
+        &-img_5 {
+            display: inline-block;
+            width: 100%;
+            height: 280px;
+            background: url("./images/block-3-mob-5.jpg") no-repeat right center/contain #fff;
+            color: #FFFFFF;
+        }
+        &-img_6 {
+            display: inline-block;
+            width: 100%;
+            height: 280px;
+            background: url("./images/block-3-mob-6.jpg") no-repeat right center/contain #fff;
+            color: #FFFFFF;
+        }
+    }
+    .block-3__mobile-title {
+        margin: 20px 0;
+    }
+    .block-3__title-text {
+        font-family: 'a_futuraroundbold';
+        font-size: 20px;
+        line-height: 25px;
+        color: #FFFFFF;
+        background: #13B0B1;
+        border-radius: 22px;
+        box-decoration-break: clone;
+        -webkit-box-decoration-break: clone;
+        padding: 5px;
+    }
+    .block-3__mobile-text {
+        margin: 70px 0 0 0;
+        font-family: 'Geometria-Regular';
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+    }
+    // .block-3__mobile-wrap .slick-dots {
+    //     top: 369px;
+    // }
+    // .block-3__mobile-wrap .slick-dots li button::before {
+    //     width: 16px;
+    //     height: 13px;
+    //     content: url('./images/icons/block-3-mob-dots.svg');
+    //     opacity: 1;
+    // }
+    // .block-3__mobile-wrap .slick-active button::before {
+    //     width: 16px;
+    //     height: 13px;
+    //     content: url('./images/icons/block-3-mob-dots-active.svg') !important;
+    //     opacity: 1;
+    // }
+    // .block-3__mobile-wrap .slick-prev::before {
+    //     content: url('./images/icons/block-3-mob-arrow-left.svg');
+    // }
+    // .block-3__mobile-wrap .slick-next::before {
+    //     content: url('./images/icons/block-3-mob-arrow-right.svg');
+    // }
+    // .block-3__mobile-wrap .slick-prev,
+    // .block-3__mobile-wrap .slick-next {
+    //     top: unset;
+    //     top: 376px;
+    //     width: 13px;
+    //     height: 25px;
+    //     z-index: 5;
+    // }
+    // .block-3__mobile-wrap .slick-prev {
+    //     left: 10%;
+    // }
+    // .block-3__mobile-wrap .slick-next {
+    //     right: 10%;
+    // }
+    //dfgdsfgsdfg
+    .block-3__slider-arrows_wrap {
+        position: relative;
+    }
+    .block-3__slider-arrows {
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        width: 100%;
+    }
+    .block-3__arrow {
+        &-next {
+            background: url('./images/icons/block-3-mob-arrow-right.svg') no-repeat center center transparent;
+            width: 13px;
+            height: 25px;
+            cursor: pointer;
+        }
+        &-prev {
+            background: url('./images/icons/block-3-mob-arrow-left.svg') no-repeat center center transparent;
+            width: 13px;
+            height: 25px;
+            cursor: pointer;
+        }
+    }
+    .block-3__appendDots {
+        width: 16px;
+        height: 13px;
+        content: url('./images/icons/block-3-mob-dots.svg');
+    }
+    .block-3__appendDots .slick-active button::before {
+        width: 16px;
+        height: 13px;
+        content: url('./images/icons/block-3-mob-dots-active.svg') !important;
+        opacity: 1;
     }
 }

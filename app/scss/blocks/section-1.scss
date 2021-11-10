@@ -1,0 +1,280 @@
+.desc__text {
+    margin: 0;
+    background: #13B0B1;
+    border-radius: 22px;
+    font-family: 'a_futuraroundbold';
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.desc__title {
+    margin: 0;
+    font-family: 'a_futuraroundbold';
+    font-size: 49px;
+    line-height: 53px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.block-1__text-3 {
+    text-align: center;
+}
+
+.text__desc {
+    padding: 5px 11px;
+    font-family: 'a_futuraroundbold';
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #FF8543;
+    border-radius: 22px;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    color: white;
+}
+
+.block-1__price {
+    text-align: center;
+}
+
+.desc__price {
+    margin: 0 0 25px 0;
+    font-family: 'a_futuraroundbold';
+    font-size: 26px;
+    line-height: 33px;
+    color: #FFFFFF;
+}
+
+.block-1__btn {
+    width: 151px;
+    height: 50px;
+    border: 1px dashed #FFFFFF;
+    border-radius: 28px;
+    &-amazon {
+        width: 139px;
+        height: 40px;
+        margin: 4px 5px 5px 5px;
+        padding: 4px;
+        display: flex;
+        flex-direction: row;
+        border-radius: 22px;
+        background-color: #77CF08;
+        &:hover {
+            background: #2F80ED;
+        }
+    }
+}
+
+.block-1__btn-link {
+    width: 139px;
+    height: 40px;
+    margin: 4px 5px 5px 5px;
+    padding: 4px;
+    display: block;
+    background-color: #77CF08;
+    border-radius: 22px;
+    &:hover {
+        background: #2F80ED;
+    }
+}
+
+.btn__link-text {
+    margin: 0;
+    font-family: 'a_futuraroundbold';
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.btn__link-desc {
+    margin: 0;
+    font-family: 'geometriabold';
+    font-size: 9px;
+    line-height: 11px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.amazon__icon {
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-image: url('/images/icons/icon-amazon.svg');
+}
+
+.amazon__btn-link {
+    padding-left: 5px;
+}
+
+.decs__inner-btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+// .block-1__slider-bg img {
+//     height: 700px;
+// }
+// .block-1__slider-main img {
+//     height: 700px;
+//     width: 630px !important;
+// }
+.desc__img {
+    display: block;
+    width: 186px;
+    height: 132px;
+    background: url('./images/block-1__icon-winner.png') no-repeat center center/contain transparent;
+}
+
+.block-1__desc-img {
+    margin-top: 45px;
+    text-align: center;
+}
+
+.block-1__desc-img {
+    display: flex;
+    justify-content: center;
+}
+
+.slider__bg {
+    &-1 {
+        height: 700px;
+        background: url('./images/slider__bg-1.jpg') no-repeat center center/cover transparent;
+    }
+    &-2 {
+        height: 700px;
+        background: url('./images/slider__bg-2.jpg') no-repeat center center/cover transparent;
+    }
+    &-3 {
+        height: 700px;
+        background: url('./images/slider__bg-3.jpg') no-repeat center center/cover transparent;
+    }
+    &-4 {
+        height: 700px;
+        background: url('./images/slider__bg-4.jpg') no-repeat center center/cover transparent;
+    }
+}
+
+.slider__main {
+    &-1 {
+        margin-right: -15px;
+        height: 700px;
+        background: url('./images/slider__main-1.jpg') no-repeat center center/cover transparent;
+    }
+    &-2 {
+        margin-right: -15px;
+        height: 700px;
+        background: url('./images/slider__main-2.jpg') no-repeat center center/cover transparent;
+    }
+    &-3 {
+        margin-right: -15px;
+        height: 700px;
+        background: url('./images/slider__main-3.jpg') no-repeat center center/cover transparent;
+    }
+    &-4 {
+        margin-right: -15px;
+        height: 700px;
+        background: url('./images/slider__main-4.jpg') no-repeat center center/cover transparent;
+    }
+}
+
+.block-1__text {
+    &-1 {
+        margin-top: 60px;
+    }
+    &-2 {
+        margin: 25px 0;
+    }
+    &-3 {
+        margin: 25px 0;
+    }
+}
+
+@media (min-width:768px) and (max-width:992px) {
+    .block-1__wrap {
+        flex-wrap: nowrap;
+    }
+}
+
+@media (max-width:767px) {
+    .desc__text {
+        background: none;
+        border-radius: unset;
+        font-size: 11px;
+        line-height: 15px;
+        text-align: right;
+    }
+    .block-1__text-1 {
+        margin-top: 20px;
+    }
+    .desc__title {
+        font-size: 34px;
+        line-height: 43px;
+    }
+    .block-1__text-2 {
+        margin: 5px 0 0 0;
+    }
+    .text__desc {
+        padding: 5px 11px;
+        font-size: 17px;
+        line-height: 22px;
+        text-align: left;
+    }
+    .block-1__text-3 {
+        text-align: left;
+    }
+    .block-1__price {
+        text-align: left;
+    }
+    .desc__price {
+        margin: 0 0 0 0;
+    }
+    .block-1__desc-img {
+        margin-top: 20px;
+    }
+    .block-1__slider {
+        display: none;
+    }
+    .desc__wrap-btn {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .block-1__desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+    .block-1,
+    .block-1__wrap {
+        height: 100%;
+    }
+    .slider__bg {
+        &-1,
+        &-2,
+        &-3,
+        &-4 {
+            height: 600px;
+            background: url('./images/slider__main-mob-1.jpg') no-repeat center top/cover transparent;
+        }
+    }
+    .desc__img {
+        width: 130px;
+        height: 130px;
+        margin: 5px;
+        background: url("./images/block-1__icon-winner.png") no-repeat center center/contain transparent;
+        border: 1px dashed #FFFFFF;
+        border-radius: 50%;
+        &-wrap {
+            background: #FF8543;
+            border-radius: 50%;
+            width: 140px;
+            height: 140px;
+        }
+    }
+}

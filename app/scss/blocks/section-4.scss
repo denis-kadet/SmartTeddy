@@ -72,11 +72,8 @@
 }
 
 .block-4__title {
-    font-family: 'a_futuraroundbold';
     width: 220px;
-    font-size: 34px;
-    line-height: 43px;
-    color: #FFFFFF;
+    @extend %title__h3;
 }
 
 .block-4__btn {

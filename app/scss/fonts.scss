@@ -73,3 +73,17 @@ body {
 html {
     overflow-x: hidden;
 }
+
+@media (max-width:575px) {
+    .container {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+}
+
+@media (max-width:375px) {
+    .container {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+}

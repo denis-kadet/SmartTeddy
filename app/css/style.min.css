@@ -790,7 +790,7 @@ a {
   padding: 5px 11px;
   font-family: 'a_futuraroundbold';
   font-size: 16px;
-  line-height: 21px;
+  line-height: 27px;
   text-align: center;
   color: #FFFFFF;
   background: #FF8543;
@@ -1069,7 +1069,7 @@ a {
   .block-2__animal {
     margin-bottom: 22px; } }
 
-.block-3__title, .block-4__title, .block-5__title {
+.block-3__title, .block-4__title, .block-5__title, .block-6__title {
   font-family: 'a_futuraroundbold';
   font-size: 34px;
   line-height: 43px;
@@ -1578,3 +1578,134 @@ a {
       width: 100%;
       bottom: -1px;
       right: -100%; } }
+
+.section-6__bg {
+  padding: 40px 0;
+  background: #13B0B1; }
+
+.block-6__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; }
+
+.block-6__title {
+  margin-bottom: 20px; }
+
+.block-6__img-bear {
+  display: block;
+  width: 195px;
+  height: 245px;
+  background: url("./images/icons/block-6-img-beer.svg") no-repeat center center transparent; }
+
+.block-6__img-smart {
+  display: block;
+  width: 204px;
+  height: 300px;
+  background: url("./images/icons/block-6-img-smart.svg") no-repeat center center transparent; }
+
+.block-6__container-text {
+  padding: 4px;
+  font-family: 'a_futuraroundbold';
+  font-size: 20px;
+  line-height: 29px;
+  letter-spacing: -0.01em;
+  color: #FFFFFF;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  background: #FF8543;
+  border-radius: 22px; }
+
+.block-6__desc {
+  border: 1px dashed #FFFFFF;
+  border-radius: 0px 30px 30px 30px; }
+  .block-6__desc-text {
+    margin: 5px;
+    padding: 10px;
+    font-family: 'geometriabold';
+    font-size: 14px;
+    line-height: 18px;
+    color: #4F4F4F;
+    background: #FFFFFF;
+    border-radius: 0px 24px 24px 24px; }
+
+.block-6__google-icon {
+  display: block;
+  width: 140px;
+  height: 47px;
+  background: url("./images/block-6-icon-google.png") no-repeat center center #fff;
+  border-radius: 24px; }
+  .block-6__google-icon:hover {
+    background: url("./images/block-6-icon-google-hover.png") no-repeat center center #fff; }
+
+.block-6__apple-icon {
+  display: block;
+  width: 140px;
+  height: 47px;
+  background: url("./images/block-6-icon-apple.png") no-repeat center center #fff;
+  border-radius: 24px; }
+  .block-6__apple-icon:hover {
+    background: url("./images/block-6-icon-apple-hover.png") no-repeat center center #fff; }
+
+.block-6_btn {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px; }
+
+.block-6__text-wrap {
+  margin-bottom: 25px; }
+
+.block-6__items {
+  margin-top: 50px; }
+
+.block-6__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .block-6__item-title {
+    padding-left: 4px;
+    padding-right: 4px;
+    font-family: 'a_futuraroundbold';
+    font-size: 20px;
+    line-height: 29px;
+    letter-spacing: -0.01em;
+    color: #FFFFFF;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    background: #FF8543;
+    border-radius: 22px; }
+  .block-6__item-icon_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 73px;
+    height: 73px;
+    border: 1px dashed #FFFFFF;
+    border-radius: 50%; }
+  .block-6__item-icon_gram {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: url("./images/icons/block-6-icon-gram.svg") no-repeat center center #fff;
+    border-radius: 50%; }
+  .block-6__item-text {
+    margin-top: 15px;
+    font-family: 'Geometria-Regular';
+    font-size: 14px;
+    line-height: 120%;
+    color: #FFFFFF; }
+  .block-6__item-decs {
+    display: flex;
+    flex-direction: column;
+    width: 260px; }
+
+.block-6__bear-wrap,
+.block-6__smart-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100%; }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .block-6__item-decs {
+    width: 200px; } }

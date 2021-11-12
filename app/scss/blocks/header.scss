@@ -76,6 +76,14 @@ a {
         line-height: 15px;
         color: #fff;
     }
+    &-link:hover {
+        color: #A7FFEB;
+    }
+    &-link_active {
+        padding-bottom: 2px;
+        border-bottom: 1px dashed #A7FFEB;
+        color: #A7FFEB;
+    }
     &-mobile {
         display: none;
     }

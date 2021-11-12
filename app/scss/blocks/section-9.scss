@@ -1,0 +1,87 @@
+.section-9__bg {
+    position: relative;
+    padding: 50px 0 90px 0;
+    z-index: 1;
+    background: #13B0B1;
+}
+
+.block-9__title {
+    margin-bottom: 30px;
+    @extend %title__h3;
+}
+
+.item__desc {
+    &-year {
+        font-family: 'a_futuraroundbold';
+        font-size: 44px;
+        line-height: 56px;
+        color: #FFFFFF;
+    }
+    &-text {
+        font-family: 'Geometria-Regular';
+        font-size: 14px;
+        line-height: 120%;
+        color: #FFFFFF;
+    }
+}
+
+.block-9__item {
+    &-wrap {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+        margin-bottom: 40px;
+        border: 1px dashed #FFFFFF;
+        border-radius: 0px 30px 30px 30px;
+        &_1 {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+            padding: 5px 5px 5px 12px;
+            border: 1px dashed #FFFFFF;
+            border-radius: 0px 30px 30px 30px;
+        }
+    }
+    &-inner {
+        position: relative;
+    }
+    &-desc {
+        margin-top: 25px;
+        width: 290px;
+    }
+    &-img_1 {
+        z-index: -1;
+    }
+    &-img_1::before {
+        content: "";
+        position: absolute;
+        background: #FF8543;
+        height: 21px;
+        width: 280%;
+        left: -100%;
+        border-radius: 24px;
+        top: 23%;
+        z-index: 2;
+    }
+    &-img_4 {
+        z-index: -1;
+    }
+    &-img_4::before {
+        content: "";
+        position: absolute;
+        background: #FF8543;
+        height: 21px;
+        width: 280%;
+        left: -100%;
+        border-radius: 24px;
+        top: 23%;
+        z-index: 2;
+    }
+}
+
+.item__img {
+    position: relative;
+    z-index: 5;
+    max-width: 100%;
+    border-radius: 0px 25px 25px 25px;
+}

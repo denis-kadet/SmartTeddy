@@ -154,3 +154,59 @@
         width: 200px;
     }
 }
+
+@media (max-width:991px) {
+    .block-6_btn {
+        justify-content: space-around;
+    }
+    .block-6__item-decs {
+        margin-left: 20px;
+        width: 100%;
+    }
+    .block-6__item {
+        justify-content: center;
+    }
+    .block-6__item:not(:first-child) {
+        margin-top: 30px;
+    }
+    .block-6__text-wrap {
+        margin-top: 20px;
+        text-align: center;
+    }
+    .block-6__item-icon_wrap {
+        min-width: 73px;
+    }
+    .block-6__img-bear {
+        width: 168px;
+        height: 196px;
+        background-size: contain;
+    }
+    .block-6__img-smart {
+        width: 137px;
+        height: 202px;
+        background-size: contain;
+    }
+}
+
+@media (max-width:575px) {
+    .section-6__bg {
+        padding: 30px 0;
+    }
+    .block-6__text-wrap {
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+    .block-6__container {
+        margin: 20px 0 30px 0;
+        height: unset;
+    }
+    .block-6__items {
+        margin-top: 0;
+    }
+    .block-6_btn {
+        justify-content: space-between;
+    }
+    .block-6__img-bear {
+        background: url("./images/icons/block-6-img-beer-mob.svg") no-repeat center center transparent;
+    }
+}

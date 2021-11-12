@@ -74,9 +74,9 @@ function copyfonts() {
         "./app/fonts/**/*"
     ]).pipe(dest("./dist/fonts"));
 }
-
+//, "!app/images/icons"
 function copyimg() {
-    return src(["./app/images/**/*", "!app/images/icons"]).pipe(dest("./dist/images"))
+    return src(["./app/images/**/*"]).pipe(dest("./dist/images/"))
 }
 
 

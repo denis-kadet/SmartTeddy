@@ -1,3 +1,8 @@
+//header active
+$('.header__nav-link').on('click', function() {
+    $('.header__nav-link').removeClass('header__nav-link_active');
+    $(this).addClass('header__nav-link_active');
+});
 //menu mobile
 $(document).ready(function() {
     $(".nav__mobile-icon_link").click(function() {
@@ -70,25 +75,28 @@ $(document).ready(function() {
         autoplaySpeed: 2000,
     });
 
-//support 
+    //support 
 
     $("#my-accordion").accordionjs({
         // Allow self close.(data-close-able)
-        closeAble   : true,
+        closeAble: true,
         // Close other sections.(data-close-other)
-        closeOther  : true,
+        closeOther: true,
         // Animation Speed.(data-slide-speed)
-        slideSpeed  : 150,
+        slideSpeed: 150,
         // The section open on first init. A number from 1 to X or false.(data-active-index)
-        activeIndex : false,
+        activeIndex: false,
     });
 
     $('.accordion__title').on('click', function(e) {
-        e.preventDefault();
-        $('.accordion__title').removeClass('accordion__title-active');
+        $(this).removeClass('accordion__title-active');
+        // e.preventDefault();
         $('.accordionjs li').children().removeClass('accordion__title-active');
         // $('.accordion__title').removeClass('accordion__title-active');
-        $(this).toggleClass('accordion__title-active');
+        // $(this).toggleClass('accordion__title-active ');
+
+        $(this).addClass('accordion__title-active');
+
     });
 
 });

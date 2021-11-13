@@ -243,11 +243,14 @@
         padding: 5px;
     }
     .block-3__mobile-text {
-        margin: 70px 0 0 0;
+        margin-top: 20px;
         font-family: "Geometria-Regular";
         font-size: 16px;
         line-height: 20px;
         color: #ffffff;
+        &:first-child{
+            margin: 70px 0 0 0;
+        }
     }
     .block-3__slider-arrows_wrap {
         position: relative;
@@ -276,10 +279,14 @@
     .block-3__appendDots {
         display: flex;
         justify-content: center;
+        transform: translateY(19px);
         & li {
             width: 16px;
             height: 13px;
             content: url("./images/icons/block-3-mob-dots.svg");
+        }
+        & li:not(:last-child) {
+            margin-right: 10px;
         }
     }
     .block-3__appendDots .slick-active {

@@ -57,8 +57,7 @@ $(document).ready(function() {
         nextArrow: '<div class="block-3__arrow-next"></div>',
         infinite: true,
         dots: true,
-        // appendDots: $('.block-3__appendDots'),
-        dotsClass: 'block-3__appendDots'
+        dotsClass: 'block-3__appendDots',
         // autoplay: true,
         // autoplaySpeed: 2000,
     });

@@ -46,8 +46,8 @@ $(document).ready(function() {
         arrows: false,
         infinite: true,
         dots: false,
-        // autoplay: true,
-        // autoplaySpeed: 2000,
+        autoplay: true,
+        autoplaySpeed: 2000,
     });
     $('.block-3__mobile-slider_2').slick({
         asNavFor: '.block-3__mobile-slider_1, .block-3__mobile-slider_3',
@@ -58,17 +58,37 @@ $(document).ready(function() {
         infinite: true,
         dots: true,
         dotsClass: 'block-3__appendDots',
-        // autoplay: true,
-        // autoplaySpeed: 2000,
+        autoplay: true,
+        autoplaySpeed: 2000,
     });
     $('.block-3__mobile-slider_3').slick({
         asNavFor: '.block-3__mobile-slider_2, .block-3__mobile-slider_1',
         arrows: false,
         infinite: true,
         dots: false,
-        // autoplay: true,
-        // autoplaySpeed: 2000,
+        autoplay: true,
+        autoplaySpeed: 2000,
     });
 
+//support 
+
+    $("#my-accordion").accordionjs({
+        // Allow self close.(data-close-able)
+        closeAble   : true,
+        // Close other sections.(data-close-other)
+        closeOther  : true,
+        // Animation Speed.(data-slide-speed)
+        slideSpeed  : 150,
+        // The section open on first init. A number from 1 to X or false.(data-active-index)
+        activeIndex : false,
+    });
+
+    $('.accordion__title').on('click', function(e) {
+        e.preventDefault();
+        $('.accordion__title').removeClass('accordion__title-active');
+        $('.accordionjs li').children().removeClass('accordion__title-active');
+        // $('.accordion__title').removeClass('accordion__title-active');
+        $(this).toggleClass('accordion__title-active');
+    });
 
 });

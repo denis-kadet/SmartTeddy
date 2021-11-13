@@ -35,6 +35,8 @@ function clean() {
 
 const files = [
     "./app/scss/fonts.scss",
+    './node_modules/bootstrap/dist/css/bootstrap-grid.min.css',
+    // './node_modules/accordionjs/accordion.css',
     "./node_modules/slick-slider/slick/slick.css",
     // "./node_modules/slick-slider/slick/slick-theme.css",
     "node_modules/normalize.css/normalize.css",
@@ -65,7 +67,7 @@ function copycss() {
 
 function copyhtml() {
     return src([
-        "./app/index.html"
+        "./app/*.html"
     ]).pipe(dest("./dist"));
 }
 
@@ -84,6 +86,7 @@ const libs = [
     './node_modules/jquery/dist/jquery.js',
     './node_modules/jquery-migrate/dist/jquery-migrate.min.js',
     './node_modules/slick-slider/slick/slick.min.js',
+    './node_modules/accordionjs/accordion.min.js',
     './app/js/main.js',
 ]
 

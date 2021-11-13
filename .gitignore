@@ -2,5 +2,4 @@
 /dist/*
 /package-lock.json
 /package.json
-/gulpfile.js
 /app/css/style.min.css

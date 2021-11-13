@@ -99,30 +99,30 @@ function script() {
         .pipe(dest('./dist'))
 }
 
-function icon() {
-    return src('./app/images/icons/*.svg')
-        .pipe(svgo({
-            plugins: [{
-                removeAttrs: {
-                    attrs: '(fill|stroke|style|width|height|data.*)'
-                }
-            }]
-        }))
-        .pipe(svgSprite({
-            mode: {
-                symbol: {
-                    sprite: '../sprite.svg'
-                }
-            }
-        }))
-        .pipe(dest('./dist/images/icons'));
-}
+// function icon() {
+//     return src('./app/images/icons/*.svg')
+//         .pipe(svgo({
+//             plugins: [{
+//                 removeAttrs: {
+//                     attrs: '(fill|stroke|style|width|height|data.*)'
+//                 }
+//             }]
+//         }))
+//         .pipe(svgSprite({
+//             mode: {
+//                 symbol: {
+//                     sprite: '../sprite.svg'
+//                 }
+//             }
+//         }))
+//         .pipe(dest('./dist/images/icons'));
+// }
 
 function stream() {
     watch(["./app/**/*.scss"], series(styles, copycss, copyhtml)).on("change", browserSync.reload);;
     watch(["./app/*.html"], copyhtml).on("change", browserSync.reload);
     watch(['./app/js/*.js'], script).on("change", browserSync.reload);
-    watch(['./app/images/icons/*.svg'], icon).on("change", browserSync.reload);;
+    // watch(['./app/images/icons/*.svg'], icon).on("change", browserSync.reload);
 }
 
 function server() {
@@ -142,10 +142,10 @@ exports.clean = clean;
 exports.stream = stream;
 exports.server = server;
 exports.script = script;
-exports.icon = icon;
+// exports.icon = icon;
 exports.copyfonts = copyfonts;
 exports.copyimg = copyimg;
 
 
-exports.default = series(clean, copyhtml, script, styles, copycss, copyfonts, copyimg, icon, parallel(stream, server));
-exports.build = series(clean, copyhtml, script, styles, copycss, copyfonts, copyimg, icon);
+exports.default = series(clean, copyhtml, script, styles, copycss, copyfonts, copyimg, /*icon,*/ parallel(stream, server));
+exports.build = series(clean, copyhtml, script, styles, copycss, copyfonts, copyimg/*icon,*/);

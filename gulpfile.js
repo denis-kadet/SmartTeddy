@@ -36,7 +36,7 @@ function clean() {
 const files = [
     "./app/scss/fonts.scss",
     "./node_modules/slick-slider/slick/slick.css",
-    "./node_modules/slick-slider/slick/slick-theme.css",
+    // "./node_modules/slick-slider/slick/slick-theme.css",
     "node_modules/normalize.css/normalize.css",
     "./app/scss/main.scss",
 ]

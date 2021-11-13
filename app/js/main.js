@@ -41,16 +41,34 @@ $(document).ready(function() {
         $('.block-3__list-item').eq(currentSlide).addClass('block-3__active')
     });
     //block-3 mobile slider
-    $('.block-3__mobile-wrap').slick({
+    $('.block-3__mobile-slider_1').slick({
+        asNavFor: '.block-3__mobile-slider_2, .block-3__mobile-slider_3',
+        arrows: false,
+        infinite: true,
+        dots: false,
+        // autoplay: true,
+        // autoplaySpeed: 2000,
+    });
+    $('.block-3__mobile-slider_2').slick({
+        asNavFor: '.block-3__mobile-slider_1, .block-3__mobile-slider_3',
         arrows: true,
         appendArrows: $('.block-3__slider-arrows'),
         prevArrow: '<div class="block-3__arrow-prev"></div>',
         nextArrow: '<div class="block-3__arrow-next"></div>',
         infinite: true,
         dots: true,
-        appendDots: $('.block-3__appendDots'),
-        autoplay: true,
-        autoplaySpeed: 2000,
+        // appendDots: $('.block-3__appendDots'),
+        dotsClass: 'block-3__appendDots'
+        // autoplay: true,
+        // autoplaySpeed: 2000,
+    });
+    $('.block-3__mobile-slider_3').slick({
+        asNavFor: '.block-3__mobile-slider_2, .block-3__mobile-slider_1',
+        arrows: false,
+        infinite: true,
+        dots: false,
+        // autoplay: true,
+        // autoplaySpeed: 2000,
     });
 
 

@@ -3,4 +3,4 @@
 /package-lock.json
 /package.json
 /gulpfile.js
-/app/css/*
+/app/css/style.min.css

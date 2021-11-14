@@ -1,0 +1,157 @@
+.footer {
+    background: #13b0b1;
+    padding: 50px 0 130px 0;
+    &__logo {
+        transform: translateY(-26px);
+    }
+    &__tel {
+        padding-left: 30px;
+        position: relative;
+        font-family: "geometriabold";
+        font-size: 18px;
+        line-height: 23px;
+        color: #ffffff;
+        &:hover {
+            color: #a7ffeb;
+        }
+        &:before {
+            content: "";
+            position: absolute;
+            top: 4px;
+            display: block;
+            width: 15px;
+            height: 15px;
+            background: url("./images/icons/footer-icon-tel.svg") no-repeat right center/contain transparent;
+        }
+    }
+    &__email {
+        position: relative;
+        padding-left: 30px;
+        font-family: "geometriabold";
+        font-size: 16px;
+        line-height: 120%;
+        color: #ffffff;
+        &:hover {
+            color: #a7ffeb;
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: 4px;
+            display: block;
+            width: 15px;
+            height: 10px;
+            background: url("./images/icons/footer-icon-mail.svg") no-repeat right center/contain transparent;
+            right: 208px;
+        }
+    }
+}
+.footer__social-network {
+    margin-top: 15px;
+    display: flex;
+    & a {
+        margin-right: 20px;
+    }
+}
+.social__network {
+    &-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        border: 1px dashed #ffffff;
+        border-radius: 50%;
+    }
+    &-youtube {
+        display: block;
+        width: 50px;
+        height: 50px;
+        background: url("./images/icons/footer__youtube.svg") no-repeat right center/contain transparent;
+        border-radius: 50%;
+    }
+    &-insta {
+        display: block;
+        width: 50px;
+        height: 50px;
+        background: url("./images/icons/footer__insta.svg") no-repeat right center/contain transparent;
+        border-radius: 50%;
+    }
+}
+.footer__nav {
+    &-item {
+        &:not(:last-child) {
+            border-bottom: 1px dashed #fff;
+            &:hover {
+                border-bottom: 1px dashed #a7ffeb;
+            }
+        }
+    }
+    &-link {
+        font-family: "geometriabold";
+        font-size: 16px;
+        line-height: 150%;
+        color: #fff;
+        &:hover {
+            color: #a7ffeb;
+        }
+    }
+}
+.footer__pay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 311px;
+    height: 56px;
+    border: 1px dashed #ffffff;
+    border-radius: 28px;
+}
+.footer__icon-pay {
+    display: block;
+    width: 300px;
+    height: 45px;
+    background: url("./images/icons/footer__visa-mast-amer.svg") no-repeat right center/contain transparent;
+    border-radius: 28px;
+}
+.footer__c {
+    margin-top: 45px;
+    font-family: "Geometria-Regular";
+    font-size: 14px;
+    line-height: 18px;
+    color: #ffffff;
+}
+@media (max-width: 991px) {
+    .footer__c {
+        margin-top: 20px;
+    }
+    .footer__pay {
+        margin-top: 40px;
+    }
+}
+@media (min-width:280px) and (max-width:767px){
+    .footer__contacts {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer__logo {
+        transform: translateY(0);
+    }
+    .footer__email::after {
+        left: 0;
+    }
+    .footer__tel::before {
+        left: 0;
+    }
+    .footer__social-network {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    .footer__nav{
+        margin-top: 20px;
+    }
+}
+@media (max-width: 575px){
+    .footer {
+        padding: 25px 0 25px 0;
+    } 
+}

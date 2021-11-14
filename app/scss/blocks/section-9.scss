@@ -2,7 +2,7 @@
     position: relative;
     padding: 50px 0 90px 0;
     z-index: 1;
-    background: #13B0B1;
+    background: #13b0b1;
 }
 
 .block-9__title {
@@ -16,16 +16,16 @@
 
 .item__desc {
     &-year {
-        font-family: 'a_futuraroundbold';
+        font-family: "a_futuraroundbold";
         font-size: 44px;
         line-height: 56px;
-        color: #FFFFFF;
+        color: #ffffff;
     }
     &-text {
-        font-family: 'Geometria-Regular';
+        font-family: "Geometria-Regular";
         font-size: 14px;
         line-height: 120%;
-        color: #FFFFFF;
+        color: #ffffff;
     }
 }
 
@@ -35,14 +35,14 @@
         justify-content: space-between;
         padding: 5px;
         margin-bottom: 40px;
-        border: 1px dashed #FFFFFF;
+        border: 1px dashed #ffffff;
         border-radius: 0px 30px 30px 30px;
         &_1 {
             display: flex;
             justify-content: space-between;
             flex-direction: row-reverse;
             padding: 5px 5px 5px 12px;
-            border: 1px dashed #FFFFFF;
+            border: 1px dashed #ffffff;
             border-radius: 0px 30px 30px 30px;
         }
     }
@@ -59,7 +59,7 @@
     &-img_1::before {
         content: "";
         position: absolute;
-        background: #FF8543;
+        background: #ff8543;
         height: 21px;
         width: 380%;
         left: -200%;
@@ -73,7 +73,7 @@
     &-img_4::before {
         content: "";
         position: absolute;
-        background: #FF8543;
+        background: #ff8543;
         height: 21px;
         width: 403%;
         right: -200%;
@@ -94,7 +94,7 @@
     display: none;
 }
 
-@media (min-width:576px) and (max-width:991px) {
+@media (min-width: 576px) and (max-width: 991px) {
     .block-9__item-wrap {
         flex-direction: column;
         &_1 {
@@ -113,7 +113,7 @@
         min-height: 90px;
     }
     .block-9__item-img_1::before {
-        width: 250%;
+        // width: 250%;
         bottom: 23%;
         top: unset;
     }
@@ -123,7 +123,7 @@
     }
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
     .item__img {
         height: 245px;
     }
@@ -131,7 +131,7 @@
         min-height: 115px;
     }
     .block-9__item-img_1::before {
-        width: 270%;
+        // width: 270%;
         bottom: 31%;
     }
     .block-9__item-img_4::before {
@@ -139,7 +139,7 @@
     }
 }
 
-@media (max-width:575px) {
+@media (max-width: 575px) {
     .block-9__item-img_1::before {
         content: none;
     }
@@ -178,7 +178,7 @@
         display: flex;
         justify-content: space-between;
         padding: 5px;
-        border: 1px dashed #FFFFFF;
+        border: 1px dashed #ffffff;
         border-radius: 0px 30px 30px 30px;
         margin-bottom: 12px;
     }
@@ -188,10 +188,10 @@
         min-height: unset;
     }
     .item__desc-year_mob {
-        font-family: 'a_futuraroundbold';
+        font-family: "a_futuraroundbold";
         font-size: 44px;
         line-height: 56px;
-        color: #FFFFFF;
+        color: #ffffff;
         & span {
             display: block;
             transform: rotate(-90deg);
@@ -207,30 +207,30 @@
         align-items: center;
     }
     .block-9__title {
-        font-family: 'a_futuraroundbold';
+        font-family: "a_futuraroundbold";
         margin-bottom: 15px;
         font-size: 20px;
         line-height: 25px;
-        color: #FFFFFF;
+        color: #ffffff;
         & span {
             padding: 5px;
             box-decoration-break: clone;
             -webkit-box-decoration-break: clone;
-            background: #FF8543;
+            background: #ff8543;
             border-radius: 22px;
         }
     }
     .section-9__bg {
-        background: #2F80ED;
+        background: #2f80ed;
         padding: 20px 0 20px 0;
     }
     .section-9__bg:before {
         content: "";
         position: absolute;
-        background: #13B0B1;
+        background: #13b0b1;
         width: 21px;
         height: 97%;
-        left: 84px;
+        left: 70px;
         border-radius: 24px 24px 0 0;
         bottom: -1px;
         z-index: -1;

@@ -89,13 +89,13 @@ $(document).ready(function() {
     });
 
     $('.accordion__title').on('click', function(e) {
-        $(this).removeClass('accordion__title-active');
+        // $(this).removeClass('accordion__title-active');
         // e.preventDefault();
         $('.accordionjs li').children().removeClass('accordion__title-active');
         // $('.accordion__title').removeClass('accordion__title-active');
-        // $(this).toggleClass('accordion__title-active ');
+        $(this).toggleClass('accordion__title-active ');
 
-        $(this).addClass('accordion__title-active');
+        // $(this).addClass('accordion__title-active');
 
     });
 

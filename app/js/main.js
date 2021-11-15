@@ -87,7 +87,24 @@ $(document).ready(function() {
         // The section open on first init. A number from 1 to X or false.(data-active-index)
         activeIndex: false,
     });
-
+    $("#my-accordion-1").accordionjs({
+        closeAble: true,
+        closeOther: true,
+        slideSpeed: 150,
+        activeIndex: false,
+    });
+    $("#my-accordion-2").accordionjs({
+        closeAble: true,
+        closeOther: true,
+        slideSpeed: 150,
+        activeIndex: false,
+    });
+    $("#my-accordion-3").accordionjs({
+        closeAble: true,
+        closeOther: true,
+        slideSpeed: 150,
+        activeIndex: false,
+    });
     $('.accordion__title').on('click', function(e) {
         // $(this).removeClass('accordion__title-active');
         // e.preventDefault();

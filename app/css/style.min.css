@@ -3594,7 +3594,16 @@ a {
     width: 16px;
     height: 13px;
     content: url("./images/icons/block-3-mob-dots-active.svg") !important;
-    opacity: 1; } }
+    opacity: 1; }
+  .animal__item {
+    font-size: 12px;
+    line-height: 15px; }
+  .animal__items {
+    width: 194px; }
+  .animal__title {
+    margin-top: 0;
+    font-size: 20px;
+    line-height: 25px; } }
 
 .section-4__wrap {
   background: #c965f8; }
@@ -4377,12 +4386,17 @@ a {
     background: url("./images/icons/block-8-img-mob-3.svg") no-repeat center center/contain transparent;
     transform: translateX(30px); }
   .block-8__img-mob-2 {
-    margin-top: 15px;
     display: block;
     width: 220px;
     height: 290px;
-    background: url("./images/icons/block-8-img-mob-2.svg") no-repeat center center/contain transparent;
-    transform: translate(-64px, -65px); }
+    background: url("./images/icons/block-8-img-mob-2.svg") no-repeat center center/cover transparent;
+    transform: translateX(-15px); }
+  .block-8__img-mob-3 {
+    display: block;
+    width: 122px;
+    height: 100%;
+    background: url("./images/icons/block-8-img-mob-1.svg") no-repeat center center/cover transparent;
+    transform: translateX(15px); }
   .block-8__desc-title_mob {
     margin-bottom: 20px;
     width: 141px;

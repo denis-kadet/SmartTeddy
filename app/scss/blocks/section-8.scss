@@ -347,13 +347,19 @@ text-align: center;
       transform: translateX(30px);
     }
     &-2{
-      margin-top: 15px;
+      //margin-top: 15px;
       display: block;
       width: 220px;
       height: 290px;
-      background: url("./images/icons/block-8-img-mob-2.svg") no-repeat center center/contain transparent;
-      transform: translate(-64px, -65px);
-      //transform: translateY(-5px);
+      background: url("./images/icons/block-8-img-mob-2.svg") no-repeat center center/cover transparent;
+      transform: translateX(-15px);
+    }
+    &-3{
+      display: block;
+      width: 122px;
+      height: 100%;
+      background: url("./images/icons/block-8-img-mob-1.svg") no-repeat center center/cover transparent;
+      transform: translateX(15px);
     }
   }
   .block-8__desc-title_mob {

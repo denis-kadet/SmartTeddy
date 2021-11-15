@@ -295,4 +295,16 @@
         content: url("./images/icons/block-3-mob-dots-active.svg") !important;
         opacity: 1;
     }
+    .animal__item {
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .animal__items {
+        width: 194px;
+    }
+    .animal__title {
+        margin-top: 0;
+        font-size: 20px;
+        line-height: 25px;
+    }
 }

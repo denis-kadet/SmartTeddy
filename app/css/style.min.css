@@ -2889,6 +2889,132 @@ template {
   .footer {
     padding: 25px 0 25px 0; } }
 
+.happin__bg {
+  padding: 70px 0 100px 0;
+  background: #C965F8; }
+
+.happin__title {
+  margin: 0 0 30px 0;
+  text-align: left !important; }
+
+.happin__text {
+  font-family: 'geometriabold';
+  font-size: 20px;
+  line-height: 25px;
+  color: #FFFFFF; }
+
+.happin__img {
+  display: block;
+  width: 250px;
+  height: 310px;
+  background: url("./images/icons/happin-img.svg") no-repeat center center transparent;
+  background-size: contain; }
+  .happin__img-wrap {
+    display: flex;
+    justify-content: center; }
+
+.happin__item {
+  position: relative;
+  margin-bottom: 30px;
+  padding-left: 64px;
+  font-family: 'Geometria-Regular';
+  list-style-type: none;
+  counter-increment: list;
+  font-size: 16px;
+  line-height: 20px;
+  color: #4F4F4F; }
+
+.happin__item:before {
+  left: 15px;
+  position: absolute;
+  font-family: 'a_futuraroundbold';
+  font-size: 44px;
+  text-align: right;
+  content: counter(list) " ";
+  color: #BB6BD9; }
+
+.happin__warr {
+  background: #FFFFFF;
+  border-radius: 0px 24px 24px 24px; }
+
+.happin__item,
+.happin__list {
+  font-size: 16px;
+  line-height: 20px;
+  color: #4F4F4F; }
+
+.happin__lists {
+  margin-top: 30px; }
+
+.happin__list {
+  padding-left: 20px;
+  position: relative; }
+  .happin__list:before {
+    position: absolute;
+    top: 10px;
+    left: 7px;
+    content: "";
+    width: 4px;
+    height: 4px;
+    background-color: #4F4F4F;
+    border-radius: 50%; }
+
+.happin__items {
+  margin: 0;
+  padding: 50px 0;
+  -moz-column-count: 2;
+       column-count: 2; }
+
+.happin__item-link {
+  font-family: 'geometriabold';
+  color: #13B0B1; }
+  .happin__item-link:hover {
+    color: #13B0B1; }
+
+.happin__item-1 {
+  font-family: 'geometriabold';
+  color: #FFA800; }
+
+.happin__item-2 {
+  margin: 0;
+  font-family: 'geometriabold';
+  color: #13B0B1; }
+
+.happin__month {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  width: 155px;
+  height: 155px;
+  border: 1px dashed #13B0B1;
+  border-radius: 50%;
+  z-index: 1; }
+  .happin__month-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 142px;
+    height: 142px;
+    background: #FF8543;
+    border-radius: 50%; }
+  .happin__month-1 {
+    font-family: 'a_futuraroundbold';
+    font-size: 81px;
+    line-height: 1;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #FFFFFF; }
+  .happin__month-2 {
+    font-family: 'a_futuraroundbold';
+    font-size: 20.2762px;
+    line-height: 1;
+    text-align: center;
+    color: #FFFFFF; }
+
 ul {
   margin: 0;
   padding: 0; }
@@ -3586,7 +3712,7 @@ a {
   .block-2__animal {
     margin-bottom: 22px; } }
 
-.payment__title, .block-10__title, .block-3__title, .block-4__title, .block-5__title, .block-6__title, .block-7__title, .block-8__title, .block-9__title, .smartworks__title {
+.happin__title, .happin__block-1_title, .payment__title, .block-10__title, .block-3__title, .block-4__title, .block-5__title, .block-6__title, .block-7__title, .block-8__title, .block-9__title, .smartworks__title {
   font-family: "a_futuraroundbold";
   font-size: 34px;
   line-height: 43px;

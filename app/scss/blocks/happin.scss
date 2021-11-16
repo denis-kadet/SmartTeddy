@@ -27,6 +27,14 @@
 .happin__block-1_title{
   @extend %title__h3;
 }
+.happin__block-1_subtitle{
+  margin-top: 0;
+  font-family: 'geometriabold';
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  color: #FFFFFF;
+}
 
 .happin__item {
   position: relative;
@@ -40,6 +48,7 @@
   color: #4F4F4F;
 }
 .happin__item:before {
+  top: 12px;
   left: 15px;
   position: absolute;
   font-family: 'a_futuraroundbold';
@@ -135,4 +144,10 @@
     text-align: center;
     color: #FFFFFF;
   }
+}
+.happin__items-2 .happin__item{
+  padding-left: 82px;
+}
+.happin__block-1{
+  margin: 60px 0 10px 0;
 }

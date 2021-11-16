@@ -2913,6 +2913,14 @@ template {
     display: flex;
     justify-content: center; }
 
+.happin__block-1_subtitle {
+  margin-top: 0;
+  font-family: 'geometriabold';
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  color: #FFFFFF; }
+
 .happin__item {
   position: relative;
   margin-bottom: 30px;
@@ -2925,6 +2933,7 @@ template {
   color: #4F4F4F; }
 
 .happin__item:before {
+  top: 12px;
   left: 15px;
   position: absolute;
   font-family: 'a_futuraroundbold';
@@ -3014,6 +3023,12 @@ template {
     line-height: 1;
     text-align: center;
     color: #FFFFFF; }
+
+.happin__items-2 .happin__item {
+  padding-left: 82px; }
+
+.happin__block-1 {
+  margin: 60px 0 10px 0; }
 
 ul {
   margin: 0;

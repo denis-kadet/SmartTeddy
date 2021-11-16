@@ -299,19 +299,21 @@ text-align: center;
   }
 }
 @media (max-width:767px) {
+
+  .block-8__img-right {
+    position: absolute;
+    top: -47px;
+    right: 61px;
+  }
+
+}
+@media (max-width: 575px) {
   .block-8__wrap{
     display: none;
   }
   .block-8__wrap-mob{
     display: flex;
   }
-  .block-8__img-right {
-    position: absolute;
-    top: -47px;
-    right: 61px;
-  }
-}
-@media (max-width: 575px) {
   .block-8__mob-title span{
     font-family: 'a_futuraroundbold';
     font-size: 20px;

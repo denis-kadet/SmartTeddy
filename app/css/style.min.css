@@ -3045,6 +3045,8 @@ template {
     text-align: left !important; } }
 
 @media (max-width: 575px) {
+  .happin__item {
+    padding-left: 0 !important; }
   .happin__block-1_title {
     margin: 30px 0 20px 0; }
     .happin__block-1_title span {
@@ -3104,7 +3106,7 @@ a {
   position: relative;
   width: 100%;
   background-color: #13b0b1;
-  height: 40px; }
+  height: 48px; }
   .header__wrap::before {
     content: "";
     position: absolute;
@@ -3183,9 +3185,14 @@ a {
 .mobile__nav {
   display: none; }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .header__nav {
     margin-right: 10px; } }
+
+@media (min-width: 767px) and (max-width: 991px) {
+  .header__nav-link {
+    display: block;
+    width: 95px; } }
 
 @media (max-width: 767px) {
   .header__nav,
@@ -4436,7 +4443,7 @@ a {
   align-items: flex-end;
   height: 100%; }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 991px) and (max-width: 1199px) {
   .block-6__item-decs {
     width: 200px; } }
 
@@ -5176,3 +5183,23 @@ a {
     background-color: #4F4F4F;
     top: 19px;
     left: -14px; }
+
+@media (max-width: 767px) {
+  .support__title {
+    font-size: 20px;
+    line-height: 25px; }
+  .accordion__title {
+    padding-right: 60px;
+    font-size: 16px;
+    line-height: 22px; }
+  .accordionjs {
+    margin-bottom: 30px; }
+  .accordion__title::after {
+    top: 4px; }
+  .support__bg {
+    background: transparent !important;
+    border-radius: 0 !important; }
+    .support__bg-mob {
+      padding-top: 25px;
+      background: #ffffff;
+      border-radius: 0px 24px 24px 24px; } }

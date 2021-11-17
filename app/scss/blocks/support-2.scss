@@ -60,3 +60,30 @@
         }
     }
 }
+@media (max-width: 767px) {
+    .support__title{
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .accordion__title{
+        padding-right: 60px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .accordionjs{
+        margin-bottom: 30px;
+    }
+    .accordion__title::after {
+        top: 4px;
+    }
+    .support__bg{
+        background: transparent !important;
+        border-radius: 0 !important;
+        //padding: 30px;
+        &-mob{
+            padding-top: 25px;
+            background: #ffffff;
+            border-radius: 0px 24px 24px 24px;
+        }
+    }
+}

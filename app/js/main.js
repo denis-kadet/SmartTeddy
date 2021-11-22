@@ -51,8 +51,8 @@ $(document).ready(function() {
         arrows: false,
         infinite: true,
         dots: false,
-        autoplay: true,
-        autoplaySpeed: 2000,
+        // autoplay: true,
+        // autoplaySpeed: 2000,
     });
     $('.block-3__mobile-slider_2').slick({
         asNavFor: '.block-3__mobile-slider_1, .block-3__mobile-slider_3',
@@ -63,16 +63,16 @@ $(document).ready(function() {
         infinite: true,
         dots: true,
         dotsClass: 'block-3__appendDots',
-        autoplay: true,
-        autoplaySpeed: 2000,
+        // autoplay: true,
+        // autoplaySpeed: 2000,
     });
     $('.block-3__mobile-slider_3').slick({
         asNavFor: '.block-3__mobile-slider_2, .block-3__mobile-slider_1',
         arrows: false,
         infinite: true,
         dots: false,
-        autoplay: true,
-        autoplaySpeed: 2000,
+        // autoplay: true,
+        // autoplaySpeed: 2000,
     });
 
     //support 

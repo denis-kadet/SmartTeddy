@@ -31,7 +31,8 @@
 }
 
 .block-6__container-text {
-    padding: 4px;
+    padding: 4px 13px 4px 13px;
+
     font-family: 'a_futuraroundbold';
     font-size: 20px;
     line-height: 29px;
@@ -99,7 +100,7 @@
     flex-direction: row;
     justify-content: space-between;
     &-title {
-        padding-left: 4px;
+        padding-left: 13px;
         padding-right: 4px;
         font-family: 'a_futuraroundbold';
         font-size: 20px;
@@ -127,7 +128,22 @@
         background: url("./images/icons/block-6-icon-gram.svg") no-repeat center center #fff;
         border-radius: 50%;
     }
+    &-icon_book {
+        display: block;
+        width: 60px;
+        height: 60px;
+        background: url("./images/icons/block-6-icon-book.svg") no-repeat center center #fff;
+        border-radius: 50%;
+    }
+    &-icon_pazzle {
+        display: block;
+        width: 60px;
+        height: 60px;
+        background: url("./images/icons/block-6-icon-pazzle.svg") no-repeat center center #fff;
+        border-radius: 50%;
+    }
     &-text {
+
         margin-top: 15px;
         font-family: 'Geometria-Regular';
         font-size: 14px;

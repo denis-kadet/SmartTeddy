@@ -127,12 +127,12 @@
   display: block;
   width: 150px;
   height: 107px;
-  background: url('./images/block-1__icon-winner.png') no-repeat center center/contain transparent;
+  background: url('./images/block-1__icon-winner.svg') no-repeat center center/contain transparent;
 }
   &-gold{
     display: block;
-    width: 150px;
-    height: 107px;
+    width: 112px;
+    height: 112px;
     background: url('./images/block-1__icon-gold.png') no-repeat center center/contain transparent;
   }
 }
@@ -281,7 +281,11 @@
     &-win {
       width: 130px;
       height: 130px;
-      background: url("./images/block-1__icon-winner.png") no-repeat center center/contain transparent;
+      background: url("./images/block-1__icon-winner.svg") no-repeat center center/contain transparent;
+    }
+    &-gold {
+      width: 107px;
+      height: 130px;
     }
   }
 }

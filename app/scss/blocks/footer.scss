@@ -129,9 +129,11 @@
     }
 }
 @media (min-width:280px) and (max-width:767px){
+
     .footer__contacts {
         display: flex;
         flex-direction: column;
+        margin-bottom: 20px;
     }
     .footer__logo {
         transform: translateY(0);
@@ -151,7 +153,22 @@
     }
 }
 @media (max-width: 575px){
+    .footer__tel {
+        padding-left: 0;
+        &::before {
+            left: -22px;
+        }
+    }
+    .footer__email {
+        padding-left: 0;
+        &::after {
+            left: -22px;
+        }
+    }
     .footer {
         padding: 25px 0 25px 0;
-    } 
+    }
+    .footer__contacts {
+        margin-bottom: 0;
+    }
 }

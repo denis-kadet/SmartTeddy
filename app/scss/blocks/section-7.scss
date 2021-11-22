@@ -10,13 +10,14 @@
 }
 
 .block-7__title {
+    margin-top: 0;
     text-align: left;
     margin-bottom: 20px;
     @extend%title__h3;
 }
 
 .block-7__text {
-    padding: 5px;
+    padding: 5px  13px;
     font-family: 'a_futuraroundbold';
     font-size: 20px;
     line-height: 120%;
@@ -25,6 +26,9 @@
     -webkit-box-decoration-break: clone;
     background: #2F80ED;
     border-radius: 22px;
+    &-wrap{
+        padding: 5px  13px;
+    }
 }
 
 @media (max-width:767px) {

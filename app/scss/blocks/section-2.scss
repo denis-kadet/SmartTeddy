@@ -42,10 +42,12 @@
     }
     &__inner-2 {
         min-height: 115px;
-        background: url("./images/animal-icon-2.svg") no-repeat right center/contain #fff;
+        background: url("./images/animal-icon-2.svg") no-repeat #fff;
         padding: 15px;
-        background-size: auto;
-        background-position-x: center;
+        background-size: contain;
+        //background-clip: border-box;
+        background-origin: content-box;
+        background-position: 0 14px;
         border-radius: 0px 17.6365px 17.6365px 17.6365px;
     }
     &__inner-3 {
@@ -58,7 +60,7 @@
     }
     &__inner-4 {
         min-height: 115px;
-        background: url("./images/animal-icon-4.svg") no-repeat right center/contain #fff;
+        background: url("./images/animal-icon-4.svg") no-repeat right center #fff;
         padding: 15px;
         background-size: auto;
         background-position: 90% 110%;
@@ -66,14 +68,15 @@
     }
     &__item {
         font-family: 'Geometria-Regular';
-        font-size: 8px;
+         font-width: 500;
+        font-size: 10px;
         line-height: 11px;
         color: #4F4F4F;
         list-style-type: disc;
     }
     &__items {
         padding-left: 8px;
-        width: 120px;
+        width: 170px;
     }
     &__wrap {
         min-height: 115px;
@@ -83,8 +86,94 @@
     }
 }
 
+@media (min-width: 992px) and (max-width: 1199px){
+    .animal {
+        &__inner-1 {
+            min-height: 122px;
+            background-image: none;
+            background-color: #fff;
+        }
+        &__inner-2 {
+            min-height: 122px;
+            background: url("./images/animal-icon-2.svg") no-repeat #fff;
+            background-size: 84%;
+            background-position: 29px 47px;
+        }
+        &__inner-3 {
+            min-height: 122px;
+            background: url("./images/animal-icon-3.svg") no-repeat  #fff;
+            background-position: right 27px;
+        }
+        &__inner-4 {
+            min-height: 122px;
+            background-image: none;
+            background-color: #fff;
+        }
+    }
+}
+@media (min-width: 767px) and (max-width: 991px){
+    .animal {
+        &__inner-1 {
+            background: url("./images/animal-icon-1.svg") no-repeat #fff;
+            background-size: contain;
+            background-position: center right;
+        }
+        &__inner-2 {
+            background: url("./images/animal-icon-2.svg") no-repeat #fff;
+            background-size: 77%;
+            background-position: bottom center;
+        }
+        &__inner-3 {
+            background: url("./images/animal-icon-3.svg") no-repeat #fff;
+            background-size: 50%;
+            background-position: center right;
+        }
+        &__inner-4 {
+
+        }
+    }
+}
 @media (max-width: 991px) {
     .block-2__animal {
         margin-bottom: 22px;
+    }
+}
+@media (min-width: 576px) and (max-width: 766px){
+    .animal {
+        &__inner-1 {
+            background-size: auto;
+        }
+        &__inner-2 {
+            background: url("./images/animal-icon-2.svg") no-repeat #fff;
+            background-size: 86%;
+            background-position: bottom center;
+        }
+        &__inner-3 {
+            background-size: 65%;
+        }
+    }
+}
+@media (max-width: 575px) {
+    .animal {
+        &__inner-1 {
+            background: url("./images/animal-icon-1.svg") no-repeat #fff;
+            background-size: contain;
+            background-position: center right;
+        }
+        &__inner-2 {
+            //background: url("./images/animal-icon-2.svg") no-repeat #fff;
+            background-size: 268px 103px;
+            background-position: 100% -3px;
+        }
+        &__inner-3 {
+            background: url("./images/animal-icon-3.svg") no-repeat #fff;
+            background-size: 185px 97px;
+            background-position: 93% 15px;
+        }
+        &__inner-4 {
+            background: url("./images/animal-icon-4.svg") no-repeat #fff;
+            background-size: 77px 68px;
+            background-position: 95% 120%;
+        }
     }
 }

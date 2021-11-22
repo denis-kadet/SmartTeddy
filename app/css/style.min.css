@@ -3609,7 +3609,7 @@ a {
   .text__desc {
     padding: 5px 11px;
     font-size: 17px;
-    line-height: 31px;
+    line-height: 28px;
     text-align: left; }
   .block-1__text-3 {
     text-align: left; }
@@ -4930,7 +4930,7 @@ a {
   .block-8__desc-mob-2 {
     padding: 5px 13px !important;
     text-align: left !important;
-    line-height: 14px !important; }
+    line-height: 16px !important; }
   .block-8__wrap {
     display: none; }
   .block-8__wrap-mob {
@@ -4987,6 +4987,7 @@ a {
     top: 0;
     right: 0; }
   .block-8__desc-title_mob {
+    position: relative;
     max-width: 218px;
     margin-bottom: 20px;
     width: 141px;
@@ -4994,7 +4995,7 @@ a {
     padding-right: 13px;
     font-family: 'a_futuraroundbold';
     font-size: 20px;
-    line-height: 120%;
+    line-height: 28px;
     text-align: right;
     color: #FFFFFF;
     background: #9B51E0;
@@ -5198,7 +5199,7 @@ a {
     height: 97%;
     left: 70px;
     border-radius: 24px 24px 0 0;
-    bottom: -1px;
+    bottom: 0;
     z-index: -1; } }
 
 .container__bg-smartworks {

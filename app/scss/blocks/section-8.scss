@@ -353,7 +353,7 @@
   .block-8__desc-mob-2 {
     padding: 5px 13px !important;
     text-align: left !important;
-    line-height: 14px !important;
+    line-height: 16px !important;
   }
   .block-8__wrap {
     display: none;
@@ -428,6 +428,7 @@
     }
   }
   .block-8__desc-title_mob {
+    position: relative;
     max-width: 218px;
     margin-bottom: 20px;
     width: 141px;
@@ -435,11 +436,32 @@
     padding-right: 13px;
     font-family: 'a_futuraroundbold';
     font-size: 20px;
-    line-height: 120%;
+    line-height: 28px;
     text-align: right;
     color: #FFFFFF;
     background: #9B51E0;
     border-radius: 22px;
+    //&:before{
+    //  position: absolute;
+    //  content: '';
+    //  top: 14px;
+    //  left: 100%;
+    //  right: -83%;
+    //  border-bottom: 1px dashed #FFFFFF;
+    //  z-index: 2;
+    //}
+    //&:after{
+    //  position: absolute;
+    //  top: 8px;
+    //  right: -126px;
+    //  content: '';
+    //  display: block;
+    //  width: 9px;
+    //  height: 9px;
+    //  border-radius: 50%;
+    //  background: #fff;
+    //  z-index: 1;
+    //}
   }
   .block-8__mob-desc_title {
     margin-bottom: 10px;
